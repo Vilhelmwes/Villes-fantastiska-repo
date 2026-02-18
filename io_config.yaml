@@ -1,0 +1,13 @@
+version: 0.1.1
+
+default:
+  # Default profile settings
+
+dev:
+  POSTGRES_CONNECT_TIMEOUT: 10
+  POSTGRES_DBNAME: mydb
+  POSTGRES_SCHEMA: public
+  POSTGRES_USER: postgres
+  POSTGRES_PASSWORD: postgres
+  POSTGRES_HOST: postgres
+  POSTGRES_PORT: 5432

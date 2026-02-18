@@ -12,16 +12,5 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
-  mage:
-    image: mageai/mageai:latest
-    container_name mage_pipeline
-    depends_on:
-      - postgres
-    environment:
-      USER_CODE_PATH: /home/src/magic-zoomcamp
-      REQUIRE_USER_AUTHENTICATION: 0
-    ports:
-      - "6789:6789"
-
 volumes:
   postgres_data: 
